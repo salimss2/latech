@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:latech/screens/Lets_start.dart';
 import 'package:provider/provider.dart';
 
 import 'package:latech/splashScreen/splashScreen.dart';
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Splashscreen(),
+      home: LetsStart(),
     );
   }
 }
