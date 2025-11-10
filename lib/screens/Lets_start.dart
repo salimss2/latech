@@ -24,14 +24,11 @@ class _LetsStartState extends State<LetsStart> {
       backgroundColor: const Color(0xFF0001FC),
       body: Column(
         children: [
-          Container(
-            padding: EdgeInsets.only(top: 150),
-            child: Image.asset("assets/images/Picture1.png"),
-          ),
-          
+          SizedBox(height: 30),
+          Image.asset("assets/images/picture.png"),
           SizedBox(
-                  width: double.infinity,
-                  height: 50,
+                  width: 311,
+                  height: 53,
                   child: ElevatedButton(
                     onPressed: () {
                       Navigator.push(
@@ -47,7 +44,7 @@ class _LetsStartState extends State<LetsStart> {
                       ),
                     ),
                     child: const Text(
-                      'Create an account',
+                      'Let’s start',
                       style: TextStyle(
                         fontSize: 21,
                         fontWeight: FontWeight.bold,
@@ -55,6 +52,9 @@ class _LetsStartState extends State<LetsStart> {
                     ),
                   ),
                 ),
+                SizedBox(height: 60,),
+                TextButton(onPressed: (){}, child: Text('Skip for now',style: TextStyle(fontSize: 18,color: Colors.white),)),
+
         ],
       ),
     ));

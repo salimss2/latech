@@ -3,6 +3,7 @@ import 'package:ionicons/ionicons.dart';
 import 'package:latech/screens/account.dart';
 import 'package:latech/screens/addedToCartScreen.dart';
 import 'package:latech/screens/categories.dart';
+import 'package:latech/screens/drawer.dart';
 import 'package:latech/screens/search.dart';
 import 'package:latech/widgets/custom_bottom_nav.dart';
 import 'package:material_symbols_icons/symbols.dart';
@@ -45,6 +46,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       backgroundColor: Color(0xffFDFEFF),
       //  AppBar
       appBar: AppBar(
@@ -57,7 +59,7 @@ class _HomeState extends State<Home> {
           fontWeight:FontWeight.bold,
         ),
       ),
-
+      endDrawer: DrawerPage(),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
