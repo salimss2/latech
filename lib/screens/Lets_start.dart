@@ -10,14 +10,6 @@ class LetsStart extends StatefulWidget {
 
 class _LetsStartState extends State<LetsStart> {
   @override
-  void initState() {
-    super.initState();
-
-    // ✅ هذا هو الكود الذي نستخدمه لفحص الأصول (assets)
-    rootBundle.loadString('AssetManifest.json').then((value) {
-      print(value); // يطبع قائمة الأصول الموجودة فعليًا في المشروع
-    });
-  }
   @override
   Widget build(BuildContext context) {
     return SafeArea(child: Scaffold(
