@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:latech/screens/home.dart';
 import 'package:latech/screens/sign_up.dart';
 class LetsStart extends StatefulWidget {
   const LetsStart({super.key});
@@ -45,7 +46,12 @@ class _LetsStartState extends State<LetsStart> {
                   ),
                 ),
                 SizedBox(height: 60,),
-                TextButton(onPressed: (){}, child: Text('Skip for now',style: TextStyle(fontSize: 18,color: Colors.white),)),
+                TextButton(onPressed: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Home()),
+                  );
+                }, child: Text('Skip for now',style: TextStyle(fontSize: 18,color: Colors.white),)),
 
         ],
       ),
